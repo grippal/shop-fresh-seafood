@@ -1,0 +1,26 @@
+---
+layout: default
+title: Menu
+---
+
+<main class="bg-gray-300 mx-auto w-full sm:w-4/5 flex flex-col items-center">
+    <section class="mx-12 sm:mx-0 my-10">
+        <div class="py-8">
+            <h2 class="text-2xl font-bold">Fresh Product</h2>
+            <p class="text-lg text-gray-700">All fresh product must be refrigerated and is best eaten as soon as
+                possible.</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-y-10 text-lg font-medium bg-white rounded-2xl shadow-xl p-10">
+            <p></p>
+            <p></p>
+            <p class="text-right">price</p>
+            {% for item in site.data.fresh %}
+            <p class="text-left"> {{item.name}} </p>
+            <p class="text-center"> {{item.description}} </p>
+            <p class="text-right"> {{item.price}} </p>
+            {% endfor %}
+        </div>
+    </section>
+</main>
+<h1 class="">{{ "Menu" | downcase }}</h1>

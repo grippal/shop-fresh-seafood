@@ -1,0 +1,32 @@
+---
+layout: default
+title: Cart
+---
+
+<main class="bg-gray-300 mx-auto w-full sm:w-4/5">
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="mt-12 flex flex-col w-2/3">
+        <div class="my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg divide-y divide-gray-200">
+                    <h2 class="bg-gray-50 text-center text-2xl font-semibold p-4"> Your cart </h2>
+                    <div class="bg-white min-w-full grid grid-cols-2 divide-y divide-gray-200">
+                        {% for item in site.data.fresh %}
+                        <div class="flex items-end px-16 py-5">
+                            <img class="inline-block object-cover rounded-2xl w-16 h-16 shadow-md" src="/assets/images/salmon.jpg" alt="">
+                            <div class="inline-block pl-4">
+                                <p class="text-xl font-semibold text-gray-900"> {{ item.name}} </p>
+                                <p class="text-lg font-normal text-gray-600"> {{ item.description }} </p>
+                            </div>
+                        </div>
+                        <div class="flex items-end justify-end px-16 py-5">
+                            <p class="text-xl font-semibold"> {{ item.price }} </p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<h1 class="">{{ "Your cart!" | downcase }}</h1>

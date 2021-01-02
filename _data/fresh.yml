@@ -1,0 +1,39 @@
+- item:
+  name: Atlantic Salmon Filet
+  description: approx. 3 lb. filets
+  price: $8.50 lb.
+- item:
+  name: Tilapia Filet
+  description: approx. 8 oz. filets, 2 lb. minimum
+  price: $6.50 lb.
+- item:
+  name: Super Lump Crab Meat
+  description: 16 oz. cans
+  price: $25.99 lb.
+- item:
+  name: Colossal Crab Meat
+  description: 16 oz. cans
+  price: $34.99 lb.
+- item:
+  name: Sea Scallops
+  description: 1 lb. minimum
+  price: $16.99 lb.
+- item:
+  name: Smoked Salmon
+  description: 3 lb. package
+  price: $12.99 lb.
+- item: 
+  name: Smoked Salmon
+  description: 4 oz. package
+  price: $6.99 pkg.
+
+
+
+
+
+
+
+
+
+
+
