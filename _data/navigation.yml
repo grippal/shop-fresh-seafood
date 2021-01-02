@@ -1,0 +1,11 @@
+- name: About us
+  link: /
+- name: Fish
+  link: /fish.html
+- name: Contact us
+  link: /contact.html
+- name: Delivery
+  link: /delivery.html
+- name: Cart
+  link: /cart.html
+
